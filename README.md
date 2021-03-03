@@ -24,5 +24,5 @@ cd build
 cmake ..
 make
 sudo ./LPRnet -s  // serialize model to plan file i.e. 'LPRnet.engine'
-// copy crnn.pytorch/data/demo.png here
+
 sudo ./LPRnet -d  // deserialize plan file and run inference
