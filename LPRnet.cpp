@@ -468,7 +468,7 @@ int main(int argc, char **argv) {
     auto end = std::chrono::system_clock::now();
     std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() << "us" << std::endl;
     std::vector<int> preds;
-    std::cout << std::endl;
+    
     for (int i = 0; i < 18; i++) {
         int maxj = 0;
         for (int j = 0; j < 68; j++) {
@@ -490,6 +490,7 @@ int main(int argc, char **argv) {
     for (auto v: no_repeat_blank_label) {
         str += alphabet[v];
     }
+    std::cout<<"result:"<<str<<std::endl;
     // Destroy the engine
     context->destroy();
     engine->destroy();
