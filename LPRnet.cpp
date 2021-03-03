@@ -418,8 +418,8 @@ int main(int argc, char **argv) {
         }
     } else {
         std::cerr << "arguments not right!" << std::endl;
-        std::cerr << "./crnn -s  // serialize model to plan file" << std::endl;
-        std::cerr << "./crnn -d ../samples  // deserialize plan file and run inference" << std::endl;
+        std::cerr << "./LPRnet -s  // serialize model to plan file" << std::endl;
+        std::cerr << "./LPRnet -d  // deserialize plan file and run inference" << std::endl;
         return -1;
     }
 
